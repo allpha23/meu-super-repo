@@ -71,6 +71,11 @@
       section = document.createElement("section");
       section.className = "center-content";
       document.querySelector("main").appendChild(section);
+
+      let p = document.querySelector("main").firstElementChild;
+      p = document.createElement("p");
+      p.innerText = "parte 4";
+      document.querySelector("main").firstElementChild.appendChild(p);
     </script>
   </body>
 </html>
