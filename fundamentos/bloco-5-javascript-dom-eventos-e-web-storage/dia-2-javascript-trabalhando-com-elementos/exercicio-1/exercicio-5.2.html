@@ -76,6 +76,16 @@
       p = document.createElement("p");
       p.innerText = "parte 4";
       document.querySelector("main").firstElementChild.appendChild(p);
+
+      let sectionLeft = document.querySelector("main");
+      sectionLeft = document.createElement("section");
+      sectionLeft.className = "left-content";
+      document.querySelector("main").appendChild(sectionLeft);
+
+      let sectionRight = document.querySelector("main");
+      sectionRight = document.createElement("section");
+      sectionRight.className = "right-content";
+      document.querySelector("main").appendChild(sectionRight);
     </script>
   </body>
 </html>
