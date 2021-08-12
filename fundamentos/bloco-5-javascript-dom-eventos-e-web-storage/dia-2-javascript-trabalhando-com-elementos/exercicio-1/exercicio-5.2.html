@@ -59,6 +59,7 @@
     <script>
       let h1 = document.body;
       h1 = document.createElement("h1");
+      h1.className = "title";
       h1.innerText = "Exercício 5.2 - JavaScript DOM";
       document.body.appendChild(h1);
 
@@ -104,11 +105,26 @@
         if(index === 2) list.innerText = "tres";
         if(index === 3) list.innerText = "quatro";
         if(index === 4) list.innerText = "cinco";
-        
+
         document.querySelector("ul").appendChild(list);
       }
       
+      for(let index = 0; index < 3; index += 1){
+        let h3 = document.createElement("h3");
+        h3.className = "description";
+        document.querySelector("main").appendChild(h3);
+      }
+      
+      let child = document.querySelector(".left-content");
+      document.querySelector("main").removeChild(child);
 
+      sectionRight.style.marginRight = "auto";
+      section.style.backgroundColor = "green";
+
+      removeList = document.querySelector("ul").lastElementChild;
+      document.querySelector("ul").removeChild(removeList);
+      removeList = document.querySelector("ul").lastElementChild;
+      document.querySelector("ul").removeChild(removeList);
     </script>
   </body>
 </html>
