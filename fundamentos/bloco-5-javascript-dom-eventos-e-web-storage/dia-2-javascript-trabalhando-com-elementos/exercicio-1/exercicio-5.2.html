@@ -92,6 +92,23 @@
       img.src = "https://picsum.photos/200";
       img.className = "small-image";
       document.querySelector(".left-content").appendChild(img);
+
+      let ul = document.querySelector("main").lastElementChild;
+      ul = document.createElement("ul");
+      document.querySelector("main").lastElementChild.appendChild(ul);
+
+      for(let index = 0; index < 5; index += 1){
+        let list = document.createElement("li");
+        if(index === 0) list.innerText = "um";
+        if(index === 1) list.innerText = "dois";
+        if(index === 2) list.innerText = "tres";
+        if(index === 3) list.innerText = "quatro";
+        if(index === 4) list.innerText = "cinco";
+        
+        document.querySelector("ul").appendChild(list);
+      }
+      
+
     </script>
   </body>
 </html>
